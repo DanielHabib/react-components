@@ -12,15 +12,15 @@ var HelloWorld = React.createClass({
         this.setState({
 
         });
-    }
-    getInitialState: function(){
+    },
+    getInitialState:function(){
         return {
             txt: this.props.initialTxt
         };
     },
     render:function(){
         var txt = this.state.txt;
-        return(
+        return (
         <div>
             <h1>{txt}</h1>
             <h2>{txt}</h2>
@@ -30,7 +30,7 @@ var HelloWorld = React.createClass({
             <h6>{txt}</h6>
             <p>{txt}</p>
         </div>
-        )
+        );
     },
 });
 
