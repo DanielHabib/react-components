@@ -1,25 +1,23 @@
+class HelloWorld extends React.Component({
 
-
-var HelloWorld = React.createClass({
-
-    getDefaultProps:function(){
+    getDefaultProps(){
         return {
             initialTxt: "Nadda Supplied, 0, zilch, etc."
         }
     },
-    update:function(){
+    update(){
 
         this.setState({
 
         });
     },
-    getInitialState:function(){
+    getInitialState(){
         return {
             txt: this.props.initialTxt
-        };
+        }
     },
-    render:function(){
-        var txt = this.state.txt;
+    render(){
+        var txt = this.state.txt
         return (
         <div>
             <h1>{txt}</h1>
@@ -30,8 +28,9 @@ var HelloWorld = React.createClass({
             <h6>{txt}</h6>
             <p>{txt}</p>
         </div>
-        );
+        )
     },
 });
 
-React.render(<HelloWorld initialTxt="Initial text no hello world yet"/>, document.body);
+// React.render(<HelloWorld initialTxt="Initial text no hello world yet"/>, document.body);
+React.render(<h1>yup</h1>, document.body);
